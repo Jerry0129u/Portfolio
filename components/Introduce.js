@@ -29,7 +29,7 @@ export function Introduce () {
                 <img src="images/twitter-icon.png" className="w-[24px] h-[24px]"></img>
             </div>
             <div className="w-[36px] h-[36px]">
-                <img src="images/figma-icon.png" className="w-[15px] h-[15px] mt-[4px] ml-[4px]"></img>
+                <img src="images/icon.png" className="w-[15px] h-[15px] mt-[4px] ml-[4px]"></img>
             </div>
          </div>
         </div>
