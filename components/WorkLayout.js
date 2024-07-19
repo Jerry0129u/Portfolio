@@ -2,21 +2,21 @@ import { Button } from "./Button";
 
 const WorksData = [
     {
-     title: "Fiskil",
+     title: "Fiskil1",
      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
      image: "/images/Work-picture.png",
      image2: "/images/work-icon.png",
      buttons: ["React", "Next.js", "Typescript","Nest.js", "PostgreSQL", "Tailwindcss", "Figma", "Cypress", "Storybook", "Git"]
     },
     {
-     title: "Fiskil",
+     title: "Fiskil2",
      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
      image: "/images/Work-picture.png",
      image2: "/images/work-icon.png",
      buttons: ["React", "Next.js", "Typescript","Nest.js", "PostgreSQL", "Tailwindcss", "Figma", "Cypress", "Storybook", "Git"]
     },
     {
-     title: "Fiskil",
+     title: "Fiskil3",
      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
      image: "/images/Work-picture.png",
      image2: "/images/work-icon.png",
@@ -51,7 +51,7 @@ function WorkCard ({ isReverse = false,  work}) {
                 <Button key={buttons} text={buttons} />
             ))}
             </div>
-            <div className="w-[24px] h-[24px]">
+            <div className="w-6 h-6">
                 <img src="images/work-icon.png"></img>
             </div>
         </div>

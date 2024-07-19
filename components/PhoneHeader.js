@@ -1,29 +1,23 @@
-<<<<<<< HEAD
-export function PhoneHeader () {
-    return  <section>
-        <div className="w-[375px] h-[68px] pt-4">
-         <div className="w-[343px] h-[36px] mx-4 flex gap-[211px]">
-            <div><img src="images/figma-icon.png" className="w-[96px] h-[36px]"></img></div>
-            <div><img src="images/drop-icon.png" className="w-[36px] h-[36px]"></img></div>
-         </div>
-        </div>  
-    </section>;
-}
-=======
+import Image from "next/image";
+
 export function PhoneHeader() {
   return (
     <section>
-      <div className="w-[375px] h-[68px] pt-4">
-        <div className="w-[343px] h-[36px] mx-4 flex gap-[211px]">
+      <div className="h-[68px] pt-4">
+        <div className="h-9 mx-4 flex gap-[211px]">
           <div>
-            <img src="images/logo.png" className="w-[96px] h-[36px]"></img>
+            <Image
+              src={"/images/logo.png"}
+              width={100}
+              height={100}
+              className="w-24 h-9 py-1"
+            />
           </div>
           <div>
-            <img src="images/drop-icon.png" className="w-[36px] h-[36px]"></img>
+            <img src="images/drop-icon.png" className="w-9 h-9"></img>
           </div>
         </div>
       </div>
     </section>
   );
 }
->>>>>>> refs/remotes/origin/main

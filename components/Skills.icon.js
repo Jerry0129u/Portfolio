@@ -14,19 +14,19 @@ const items = [
   { path: "skills-figma.png", text: "Figma",  style: "ml-[15px]" },
   { path: "skills-cypress.png", text: "Cypress" },
   { path: "skills-storybook.png", text: "Storybook" },
-  { path: "skills-git.png", text: "Git" },
-];
+  { path: "skills-git.png", text: "Git" }
+]
 
 export function SkillsIcon() {
   return (
-    <section className="w-[343px] mx-[16px] mt-[24px]">
+    <section className="mx-4 mt-6">
         <div className="grid grid-cols-3 gap-8 ">
           {items.map((image, index) => (
-            <div className="w-[64px] h-[64px] items-center text-center mt-[16px] py-1">
+            <div key={index} className="w-16 h-16 items-center text-center mt-4 py-1">
               <div>
                 <img src={`/images/${image.path}`} className={`${image.style }`}/>
               </div>
-              <h2 className="font-sans font-[400] text-[16px] leading-[24px] text-gray-600 mt-[8px]">
+              <h2 className="font-sans font-[400] text-[16px] leading-6 text-gray-600 mt-2">
                 {image.text} 
               </h2>
             </div>
