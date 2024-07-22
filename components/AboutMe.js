@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "./Button";
 
 export function AboutMe () {
@@ -6,8 +7,8 @@ export function AboutMe () {
         <div className="h-[1562px] my-16 mx-4 flex flex-col">
           <Button text="About Me" />
           <div className="h-[300px] flex gap-[211px] mt-6 realtive">
-            <div><img src="images/profile2.png" className="w-[240px] h-[280px] ml-[52px] mb-5 z-10 absolute"></img></div>
-            <div><img src="images/profile-shadow.png" className="w-[280px] h-[280px] ml-[-180px] mt-5 z-0 absolute"></img></div>
+            <div><Image src={"/images/profile2.png"} width={300} height={300} alt="profile2" className="w-[240px] h-[280px] ml-[52px] mb-5 z-10 absolute"/></div>
+            <div><Image src={"/images/profile-shadow.png"} width={300} height={300} alt="shaow" className="w-[280px] h-[280px] ml-[-180px] mt-5 z-0 absolute"/></div>
           </div>
           <div className="mt-12">
             <h3 className="font-sans font-[600] text-[24px] leading-8 text-gray-900">Curious about me? Here you have it:</h3>
@@ -36,5 +37,4 @@ export function AboutMe () {
         </div>
       </div>
     </section>
-  
 }

@@ -26,9 +26,7 @@ export function SkillsIcon() {
               <div>
                 <img src={`/images/${image.path}`} className={`${image.style }`}/>
               </div>
-              <h2 className="font-sans font-[400] text-[16px] leading-6 text-gray-600 mt-2">
-                {image.text} 
-              </h2>
+              <h2 className="font-sans font-[400] text-[16px] leading-6 text-gray-600 mt-2">{image.text} </h2>
             </div>
           ))}
         </div>

@@ -1,22 +1,23 @@
+import Image from "next/image";
 import { Button } from "./Button";
 
 const WorksData = [
     {
-     title: "Fiskil1",
+     title: "Fiskil 1",
      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
      image: "/images/Work-picture.png",
      image2: "/images/work-icon.png",
      buttons: ["React", "Next.js", "Typescript","Nest.js", "PostgreSQL", "Tailwindcss", "Figma", "Cypress", "Storybook", "Git"]
     },
     {
-     title: "Fiskil2",
+     title: "Fiskil 2",
      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
      image: "/images/Work-picture.png",
      image2: "/images/work-icon.png",
      buttons: ["React", "Next.js", "Typescript","Nest.js", "PostgreSQL", "Tailwindcss", "Figma", "Cypress", "Storybook", "Git"]
     },
     {
-     title: "Fiskil3",
+     title: "Fiskil 3",
      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
      image: "/images/Work-picture.png",
      image2: "/images/work-icon.png",
@@ -52,7 +53,7 @@ function WorkCard ({ isReverse = false,  work}) {
             ))}
             </div>
             <div className="w-6 h-6">
-                <img src="images/work-icon.png"></img>
+                <Image src={"/images/work-icon.png"} width={20} height={20} alt="link icon"/>
             </div>
         </div>
         </div>

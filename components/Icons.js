@@ -17,12 +17,7 @@ export function Icons() {
     <div className="flex gap-2">
       {pieces.map((icon, index) => (
         <div key={index}>
-          <div className="w-9 h-9">
-            <Image width={100} height={100}
-              src={`/images/${icon.image}`}
-              className="w-6 h-6"
-            />
-          </div>
+          <Image width={100} height={100} src={`/images/${icon.image}`} alt="icon" className="w-6 h-6"/>
         </div>
       ))}
     </div>
