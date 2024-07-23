@@ -14,14 +14,13 @@ const link = [
 export function Introduce() {
   return (
     <section>
-      <div className=" h-[880px] pt-4 flex-col flex gap-8">
+      <div className=" h-[880px] pt-4 flex-col flex gap-8 ">
         <div className=" h-[752px] mt-[64px] mx-4 flex flex-col gap-[46px]">
-          <div className="h-[300px] flex gap-[211px] realtive">
-            <div><Image src={"/images/profile.png"} width={300} height={300} alt="profile" className="w-60 h-[280px] ml-[52px] mb-5 z-10 absolute"/></div>
-            <div><Image src={"/images/profile-shadow.png"} width={300} height={300} alt="shadow" className="w-[280px] h-[280px] ml-[-180px] mt-5 z-0 absolute"/></div>
-          </div>
+         <div className="aspect-[5/6] bg-gray-200">
+          <Image src={"/images/profile.png"} width={300} height={300} alt="profile" className="block object-cover w-full relative bottom-4"/>
+         </div>
           <div className="h-[216px] flex gap-2">
-            <div>
+            <div> 
               <h3 className="font-sans font-[600] text-[36px] text-gray-900 leading-10">Hi, I’m Sagar 👋</h3>
               <p className="font-sans font-[400] text-[16px] text-gray-600 leading-6 mt-2">
                 I'm a full stack developer (React.js & Node.js) with a focus on
