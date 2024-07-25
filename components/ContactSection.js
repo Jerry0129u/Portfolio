@@ -19,10 +19,12 @@ const contacts = [
 export function ContactSection() {
   return (
     <section>
-      <div className="h-[472px] pt-4 flex-col flex gap-8 ">
+      <div className="h-[472px] flex-col flex gap-8 ">
         <div className="h-[344px] my-16 mx-4 flex flex-col gap-4">
           <Button text="Get in touch" />
+          <div className="xl:w-[576px] xl:ml-[320px]">
           <SectionParagraph paragraph="What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect." />
+          </div>
          <div className="mt-1">
           {contacts.map((call, index) => (
             <div key={index} className="flex flex-col gap-1 ">
