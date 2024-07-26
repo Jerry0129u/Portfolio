@@ -19,7 +19,7 @@ const items = [
 
 export function SkillsIcon() {
   return (
-    <section>
+    <section className="max-w-[1280px] mx-auto">
         <div className="grid grid-cols-3 gap-16 xl:grid xl:grid-cols-8 items-center xl:mt-[-20px] xl:gap-16">
           {items.map((image, index) => (
             <div key={index} className="w-16 h-16 items-center text-center mt-4 py-1">

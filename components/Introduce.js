@@ -13,19 +13,20 @@ const link = [
 
 export function Introduce() {
   return (
-    <section>
+  <section className="dark:bg-gray-950 dark:text-white">
+    <section className="max-w-[1280px] mx-auto" >
       <div className=" h-[880px] pt-4 flex-col flex gap-8 xl:h-[552px]">
         <div className=" h-[752px] mt-[64px] flex flex-col gap-[46px] xl:h-[360px] xl:my-24">
         <div className="xl:flex xl:flex-row-reverse xl:gap-[128px]"> 
         <div className="px-9 xl:w-[300px] xl:pr-0">
-         <div className="w-full aspect-[5/6] bg-gray-200">
+         <div className="w-full aspect-[5/6] bg-gray-200 dark:bg-slate-800">
           <Image src={"/images/profile.png"} width={300} height={300} alt="profile" className="block object-cover w-full h-full relative bottom-4 xl:right-4"/>
          </div>
         </div>
           <div className="h-[216px] flex gap-2 mt-12 xl:flex-1">
             <div className="xl:mt-[-60px]"> 
-              <h3 className="font-sans font-[600] text-[36px] text-gray-900 leading-10 xl:font-[700] xl:text-[60px] xl:leading-[72px]">Hi, I’m Sagar 👋</h3>
-              <p className="font-sans font-[400] text-[16px] text-gray-600 leading-6 mt-2">
+              <h3 className="font-sans font-[600] text-[36px] text-gray-900 leading-10 xl:font-[700] xl:text-[60px] xl:leading-[72px] dark:text-white">Hi, I’m Sagar 👋</h3>
+              <p className="font-sans font-[400] text-[16px] text-gray-600 leading-6 mt-2 dark:text-white">
                 I'm a full stack developer (React.js & Node.js) with a focus on
                 creating (and occasionally designing) exceptional digital
                 experiences that are fast, accessible, visually appealing, and
@@ -37,7 +38,7 @@ export function Introduce() {
               <div key={index}>
                 <div className="flex gap-2">
                   <Image src={`/images/${info.image}`} width={100} height={100} alt="info" className="w-6 h-6" />
-                  <span className="font-[400] text-[16px] leading-6 text-gray-600 font-sans">{info.text}</span>
+                  <span className="font-[400] text-[16px] leading-6 text-gray-600 font-sans dark:text-white">{info.text}</span>
                 </div>
               </div>
             ))}
@@ -51,5 +52,6 @@ export function Introduce() {
         </div>
       </div>
     </section>
+  </section>
   );
 }

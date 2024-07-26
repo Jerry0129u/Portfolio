@@ -9,7 +9,7 @@ import { Work } from "@/components/Work";
 
 export default function Home() {
   return (
-    <main className="max-w-[1280px] px-4 xl:px-8 mx-auto">
+    <main>
       <PhoneHeader />
       <Introduce />
       <AboutMe />

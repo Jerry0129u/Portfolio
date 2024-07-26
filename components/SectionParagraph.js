@@ -2,7 +2,7 @@ export function SectionParagraph(props) {
     const paragraph = props.paragraph
  
      return (
-        <div className="text-center font-sans font-[400] text-[18px] leading-7 text-gray-600">
+        <div className="text-center font-sans font-[400] text-[18px] leading-7 text-gray-600 dark:text-white">
         {paragraph}
         </div>   
      );
